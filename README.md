@@ -1,4 +1,4 @@
-## Problema 1: Exploración y validación de estructura del archivo (20 pts)
+## Problema 1: Exploración y validación de estructura del archivo 
 1. Carga el archivo `health_lifestyle_classification.csv` utilizando funciones integradas (`open`, `readlines`, `split`, etc.) — sin `pandas`.
 2. Imprime:
     * Los nombres de las columnas
@@ -9,7 +9,7 @@
 4. Crea una función `verificar_fila(fila: list) -> bool` que devuelva `True` si la fila es válida.
 5. Imprime cuántas filas son inválidas.
 
-## Problema 2: Clasificación de riesgo con múltiples condiciones (20 pts)
+## Problema 2: Clasificación de riesgo con múltiples condiciones 
 1. Define una función `clasificar_riesgo(fila)` que devuelva:
  * "Alto" si la persona tiene bmi >= 30, Smoking == Yes y physical_activity == No
  * "Medio" si solo cumple dos de esas condiciones.
@@ -20,7 +20,7 @@
 
 **Nota**: Si es necesario agragar columnas al dataframe hacerlo.
 
-## Problema 3: Agregación y análisis por grupo (20 pts)
+## Problema 3: Agregación y análisis por grupo 
 1. Escribe una función `contar_por_genero` que reciba el dataset y devuelva un diccionario con la cantidad de personas por género.
 2. Agrega un parámetro opcional que permita filtrar solo a las personas por `diet_type` y por `education_level`.
 3. Contesta:
@@ -29,7 +29,7 @@
     * Cuantas son mujeres y cuantos hombres?
 * Hay una tendencia de personas con posgrados y dietas veganas o vegetarianas?
 
-* ## Problema 4: Transformaciones funcionales avanzadas (20 pts)
+* ## Problema 4: Transformaciones funcionales avanzadas 
 1. Usa `map()` y/o  `lambda` para crear una nueva lista con el BMI (Índice de Masa Corporal) transformado a texto:
 * "Normal" si 18.5 ≤ BMI < 25
 * "Sobrepeso" si 25 ≤ BMI < 30
@@ -39,7 +39,7 @@
 2. Usa `filter()` para quedarte solo con los individuos categorizados como "Obesidad" en el paso anterior.
 3.  Usa `reduce()` para contar cuántos individuos hay por categoría.
 
-## Problema 5: Manejo de excepciones y robustez del código (20 pts)
+## Problema 5: Manejo de excepciones y robustez del código 
 1. Implementa una función `cargar_y_procesar(path: str)` que:
 * Intente abrir y leer un archivo `.csv`.
 * Detecte errores como:
